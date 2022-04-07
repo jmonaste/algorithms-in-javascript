@@ -129,7 +129,7 @@ export default class Heap {
 
   
   /**
-   * 
+   * Description - pending...
    */
 
   /**
@@ -238,6 +238,11 @@ export default class Heap {
     return this.heapContainer.toString();
   }
 
+
+  /**
+   * Description - pending...
+   */
+
   /**
    * @param {number} [customStartIndex]
    */
@@ -256,6 +261,12 @@ export default class Heap {
     }
   }
 
+
+
+  /**
+   * Description - pending...
+   */
+  
   /**
    * @param {number} [customStartIndex]
    */
