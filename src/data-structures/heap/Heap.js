@@ -14,7 +14,7 @@
  * In this implementation, the root element has an index of zero
  */
 
-import Comparator from '../../utils/comparator/Comparator';
+import Comparator from '../../utils/comparator/Comparator.js';
 
 /**
  * Parent class for Min and Max Heaps.
@@ -163,6 +163,9 @@ export default class Heap {
     return this;
   }
 
+
+
+
   /**
    * @param {*} item
    * @param {Comparator} [comparator]
@@ -207,7 +210,14 @@ export default class Heap {
     return this;
   }
 
+
+
+
+
   /**
+   * Return an array wich contains the indices of the searched elements
+   * Is performed by a simple for loop search with a simple comparison.
+   * 
    * @param {*} item
    * @param {Comparator} [comparator]
    * @return {Number[]}
@@ -264,9 +274,13 @@ export default class Heap {
 
 
   /**
-   * Description - pending...
+   * Description:
+   * Smallest child or Largest child swap will depends on the pairIsInCorrectOrder implementation
+   * We can decide un wich index of the heap we want to start de operation.
+   * If the heap element doesnt have a left child, nothing swaps.
+   * 
    */
-  
+
   /**
    * @param {number} [customStartIndex]
    */
@@ -298,6 +312,11 @@ export default class Heap {
       currentIndex = nextIndex;
     }
   }
+
+
+  /**
+   * Must Be implemented in order to perform the comparison
+   */
 
   /**
    * Checks if pair of heap elements is in correct order.
