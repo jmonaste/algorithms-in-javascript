@@ -2,6 +2,7 @@ import BubbleSort from '../bubble-sort/BubbleSort.js';
 import HeapSort from '../heap-sort/HeapSort.js';
 import InsertionSort from '../insertion-sort/InsertionSort.js';
 import MergeSort from '../merge-sort/MergeSort.js';
+import QuickSort from '../quick-sort/QuickSort.js';
 
 
 //Declare some random arrays
@@ -15,6 +16,11 @@ export const negativeArrSorted = [-10, -7, -3, -1, 0, 2, 3, 5, 13, 20];
 //log the original array
 console.log('Original array...')
 console.log(notSortedArr.toString());
+
+//QuickSort
+console.log('Performing Quick-Sort');
+const QuickSorter = new QuickSort();
+console.log(QuickSorter.sort(notSortedArr).toString());
 
 //MergeSort
 console.log('Performing Merge-Sort');
