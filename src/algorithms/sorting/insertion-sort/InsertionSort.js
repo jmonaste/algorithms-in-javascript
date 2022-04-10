@@ -16,7 +16,7 @@
  * When people manually sort cards in a bridge hand, most use a method that is similar to insertion sort.
  */
 
-import Sort from '../Sort';
+import Sort from '../Sort.js';
 
 export default class InsertionSort extends Sort {
   sort(originalArray) {

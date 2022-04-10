@@ -1,6 +1,7 @@
-import Sort from '../bubble-sort/BubbleSort.js';
 import BubbleSort from '../bubble-sort/BubbleSort.js';
 import HeapSort from '../heap-sort/HeapSort.js';
+import InsertionSort from '../insertion-sort/InsertionSort.js';
+
 
 //Declare some random arrays
 export const sortedArr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20];
@@ -13,6 +14,11 @@ export const negativeArrSorted = [-10, -7, -3, -1, 0, 2, 3, 5, 13, 20];
 //log the original array
 console.log('Original array...')
 console.log(notSortedArr.toString());
+
+//Insertion-Sort
+console.log('Performing Insertion-Sort');
+const InsertionSorter = new InsertionSort();
+console.log(InsertionSorter.sort(notSortedArr).toString());
 
 //Heap Sort
 console.log('Performing HeapSort')
