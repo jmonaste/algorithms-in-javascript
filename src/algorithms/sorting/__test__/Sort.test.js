@@ -3,6 +3,7 @@ import HeapSort from '../heap-sort/HeapSort.js';
 import InsertionSort from '../insertion-sort/InsertionSort.js';
 import MergeSort from '../merge-sort/MergeSort.js';
 import QuickSort from '../quick-sort/QuickSort.js';
+import RadixSort from '../radix-sort/RadixSort.js';
 
 
 //Declare some random arrays
@@ -16,6 +17,11 @@ export const negativeArrSorted = [-10, -7, -3, -1, 0, 2, 3, 5, 13, 20];
 //log the original array
 console.log('Original array...')
 console.log(notSortedArr.toString());
+
+//RadixSort
+console.log('Performing Radix-Sort');
+const RadixSorter = new RadixSort();
+console.log(RadixSorter.sort(notSortedArr).toString());
 
 //QuickSort
 console.log('Performing Quick-Sort');
