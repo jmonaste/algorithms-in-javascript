@@ -5,6 +5,7 @@ import MergeSort from '../merge-sort/MergeSort.js';
 import QuickSort from '../quick-sort/QuickSort.js';
 import RadixSort from '../radix-sort/RadixSort.js';
 import SelectionSort from '../selection-sort/SelectionSort.js';
+import ShellSort from '../shell-sort/ShellSort.js';
 
 
 //Declare some random arrays
@@ -18,6 +19,11 @@ export const negativeArrSorted = [-10, -7, -3, -1, 0, 2, 3, 5, 13, 20];
 //log the original array
 console.log('Original array...')
 console.log(notSortedArr.toString());
+
+//Shell Sort
+console.log('Performing Shell-Sort');
+const ShellSorter = new ShellSort();
+console.log(ShellSorter.sort(notSortedArr).toString());
 
 //SelectionSort
 console.log('Performing Selection-Sort');
