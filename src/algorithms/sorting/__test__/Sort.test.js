@@ -6,6 +6,7 @@ import QuickSort from '../quick-sort/QuickSort.js';
 import RadixSort from '../radix-sort/RadixSort.js';
 import SelectionSort from '../selection-sort/SelectionSort.js';
 import ShellSort from '../shell-sort/ShellSort.js';
+import BinaryInsertionSort from '../binaryInsertion-sort/BinaryInsertionSort.js';
 
 
 //Declare some random arrays
@@ -19,6 +20,11 @@ export const negativeArrSorted = [-10, -7, -3, -1, 0, 2, 3, 5, 13, 20];
 //log the original array
 console.log('Original array...')
 console.log(notSortedArr.toString());
+
+//Binary Insertion Sort
+console.log('Performing Binary Insertion-Sort');
+const BinaryInsertionSorter = new BinaryInsertionSort();
+console.log(BinaryInsertionSorter.sort(notSortedArr).toString());
 
 //Shell Sort
 console.log('Performing Shell-Sort');
